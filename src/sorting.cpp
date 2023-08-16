@@ -22,3 +22,21 @@ void bubble_sort(int *array, size_t size)
         }
     }
 }
+
+/**
+ * @brief Checks if the array is sorted correclty
+ *
+ * @param array
+ * @param size
+ */
+bool isSorted(int array[], size_t size)
+{
+    for (size_t i = 0; i < size - 1; i++)
+    {
+        if (array[i] > array[i + 1])
+        {
+            return false;
+        }
+    }
+    return true;
+}
